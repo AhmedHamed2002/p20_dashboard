@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<main class="container-fluid flex justify-between">
+
+    <!-- start  list item  -->
+    <div class="list bg-gray-900 h-lvh w-28 px-3 py-6 sticky top-0 left-0">
+
+        <div class="image w-full flex-nowrap  flex justify-around items-center">
+            <div class="w-12 h-12 rounded-full">
+                <img class="w-full h-full rounded-full" src="images/image.jpg" alt="image" title="Ahmed Hamed">
+            </div>
+            <p class="text-white font-bold hidden text">Ahmed Hamed</p>               
+        </div> 
+        
+        <div class="list-item ">
+            <ul class="mt-9">
+                <li class="hover:bg-gray-50/20 cursor-pointer rounded-md py-2 my-2">
+                    <div class="flex flex-nowrap justify-around items-center">
+                        <div class="w-1/4 text-center ">
+                            <i class="fa-solid fa-house text-white text-xl"></i>
+                        </div>
+                        <div class="w-2/4 hidden text">
+                            <p class="text-white ps-10">dashboard</p>
+                        </div>
+                    </div>
+                </li >
+                <li class="hover:bg-gray-50/20 cursor-pointer rounded-md py-2 my-2">
+                    <div class="flex flex-nowrap justify-around items-center">
+                        <div class="w-1/4 text-center ">
+                            <i class="fa-solid fa-users text-white text-xl"></i>
+                        </div>
+                        <div class="w-2/4 hidden text">
+                            <p class="text-white ps-10">clients</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="hover:bg-gray-50/20 cursor-pointer rounded-md py-2 my-2">
+                    <div class="flex flex-nowrap justify-around items-center">
+                        <div class="w-1/4 text-center ">
+                            <i class="fa-solid fa-table text-white text-xl"></i>
+                        </div>
+                        <div class="w-2/4 hidden  text">
+                            <p class="text-white ps-10">products</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="hover:bg-gray-50/20 cursor-pointer rounded-md py-2 my-2">
+                    <div class="flex flex-nowrap justify-around items-center">
+                        <div class="w-1/4 text-center ">
+                            <i class="fa-solid fa-chart-pie text-white text-xl"></i>
+                        </div>
+                        <div class="w-2/4 hidden text">
+                            <p class="text-white ps-10">charts</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="hover:bg-gray-50/20 cursor-pointer rounded-md py-2 my-2">
+                    <div class="flex flex-nowrap justify-around items-center">
+                        <div class="w-1/4 text-center ">
+                            <i class="fa-solid fa-pen text-white text-xl"></i>
+                        </div>
+                        <div class="w-2/4 hidden text">
+                            <p class="text-white ps-10">posts</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="hover:bg-gray-50/20 cursor-pointer rounded-md py-2 my-2">
+                    <div class="flex flex-nowrap justify-around items-center">
+                        <div class="w-1/4 text-center ">
+                            <i class="fa-solid fa-star text-white text-xl"></i>
+                        </div>
+                        <div class="w-2/4 hidden text">
+                            <p class="text-white ps-10">favorite</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="hover:bg-gray-50/20 cursor-pointer rounded-md py-2 my-2">
+                    <div class="flex flex-nowrap justify-around items-center">
+                        <div class="w-1/4 text-center ">
+                            <i class="fa-solid fa-gear text-white text-xl"></i>
+                        </div>
+                        <div class="w-2/4 hidden text">
+                            <p class="text-white ps-10">settings</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hover:bg-red-500 bg-red-600 cursor-pointer rounded-md py-2 my-2 relative top-36">
+            <div class="flex flex-nowrap justify-around items-center">
+                <div class="w-1/4 text-center ">
+                    <i class="fa-solid fa-arrow-right-from-bracket text-white text-xl"></i>
+                </div>
+                <div class="w-2/4 hidden text">
+                    <p class="text-white ps-10">log Out</p>
+                </div>
+            </div>
+        </div >
+
+    </div>
+    <!-- end list item -->
+
+    <!-- start dashboard -->
+    <div class="bg-black flex-grow text-white p-3">
+
+        <div class="header w-full bg-cyan-700 rounded-md flex justify-between items-center py-2 px-3">
+            <h2>Dashboard</h2>
+            <i class="fa-solid fa-layer-group cursor-pointer hover:text-orange-300"></i>
+        </div>
+
+        <div class="flex flex-wrap justify-center my-3 gap-3">
+            <div class="w-40 h-36 bg-gray-900 flex-grow rounded-md flex justify-around items-center cursor-pointer hover:bg-gray-900/60">
+                <i class="fa-solid fa-user text-white text-4xl"></i>
+                <div class="text-center leading-10">
+                    <h3 class="text-xl">Users</h3>
+                    <p class="text-xl">100</p>
+                </div>
+            </div>
+            <div class="w-40 h-36 bg-gray-900 flex-grow rounded-md flex justify-around items-center cursor-pointer hover:bg-gray-900/60">
+                <i class="fa-solid fa-pen text-white text-4xl"></i>
+                <div class="text-center leading-10"> 
+                    <h3 class="text-xl">Posts</h3>
+                    <p class="text-xl">34</p>
+                </div>
+            </div>
+            <div class="w-40 h-36 bg-gray-900 flex-grow rounded-md flex justify-around items-center cursor-pointer hover:bg-gray-900/60">
+                <i class="fa-solid fa-table text-white text-4xl"></i>
+                <div class="text-center leading-10">
+                    <h3 class="text-xl">Products</h3>
+                    <p class="text-xl">654</p>
+                </div>
+            </div>
+            <div class="w-40 h-36 bg-gray-900 flex-grow rounded-md flex justify-around items-center cursor-pointer hover:bg-gray-900/60">
+                <i class="fa-solid fa-hand-holding-dollar text-white text-4xl"></i>
+                <div class="text-center leading-10">
+                    <h3 class="text-xl">budget</h3>
+                    <p class="text-xl">2314</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header w-full bg-cyan-700 rounded-md flex justify-between items-center py-2 px-3">
+            <h2>Products</h2>
+            <i class="fa-solid fa-table cursor-pointer hover:text-orange-300"></i>
+        </div>
+
+        
+        <table class="w-full text-center my-3">
+            <thead>
+                <t>
+                    <th class="bg-cyan-600 py-3 border-4 border-black ">Product</th>
+                    <th class="bg-cyan-600 py-3 border-4 border-black">Price</th>
+                    <th class="bg-cyan-600 py-3 border-4 border-black">count</th>
+                </t>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer  hover:bg-gray-900/60 py-3">TV</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">500 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">343</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">phone</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">640 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">544</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">IPhone 12</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">840 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">54</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">Apple Watch</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">320 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">424</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">iMac 27</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">1200 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">100</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">camera</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">550 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">80</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">ipad</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">660 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">20</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer  hover:bg-gray-900/60 py-3">TV</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">500 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">343</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">phone</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">640 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">544</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">IPhone 12</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">840 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">54</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">Apple Watch</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">320 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">424</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">iMac 27</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">1200 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">100</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">camera</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">550 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">80</td>
+                </tr>
+                <tr>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">ipad</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">660 $</td>
+                    <td class="border-4 border-black bg-gray-900 cursor-pointer hover:bg-gray-900/60  py-3">20</td>
+                </tr>
+            </tbody>
+        </table>
+    
+
+    <!-- end dashboard -->
+
+    </main>
+
+</body>
+</html>
